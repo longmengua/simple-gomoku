@@ -1,0 +1,42 @@
+/* styles/Gomoku.module.css */
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-rows: repeat(15, 1fr);
+    gap: 2px;
+    margin: 20px auto;
+    width: 600px;
+    height: 600px;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    background: #f0f0f0;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background: #e0e0e0;
+}
+
+.resetButton {
+    padding: 10px 20px;
+    margin-top: 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+  
